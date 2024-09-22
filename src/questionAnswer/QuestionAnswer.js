@@ -1,3 +1,4 @@
+import React from 'react';
 const QuestionAnswer = ({ question, answers, correctAnswer, onCorrectAnswerClick, onWrongAnswerClick }) => {
   return (
     <>
@@ -5,7 +6,7 @@ const QuestionAnswer = ({ question, answers, correctAnswer, onCorrectAnswerClick
       {
         answers.map((answer, index) => {
           return (
-            <div id={answer} onClick={() => {
+            <div key={answer} onClick={() => {
               if (answer === correctAnswer)
                 onCorrectAnswerClick()
               else
