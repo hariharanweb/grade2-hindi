@@ -2,7 +2,7 @@ import React from 'react';
 const QuestionAnswer = ({ questionAnswer, questionIndex, onCorrectAnswerClick, onWrongAnswerClick }) => {
   return (
     <div style={{fontSize: 'x-large'}}>
-      <h4>{questionIndex}. {questionAnswer.question}</h4>
+      <h4 style={{color: 'slategrey'}}>{questionIndex}. {questionAnswer.question}</h4>
       {
         questionAnswer.answers.map((answer, index) => {
           return (
