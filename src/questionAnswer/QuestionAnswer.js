@@ -1,23 +1,23 @@
 import React from 'react';
-const QuestionAnswer = ({ question, answers, correctAnswer, onCorrectAnswerClick, onWrongAnswerClick }) => {
+const QuestionAnswer = ({ questionAnswer, questionIndex, onCorrectAnswerClick, onWrongAnswerClick }) => {
   return (
-    <>
-      <h3>{question}</h3>
+    <div style={{fontSize: 'x-large'}}>
+      <h4>{questionIndex}. {questionAnswer.question}</h4>
       {
-        answers.map((answer, index) => {
+        questionAnswer.answers.map((answer, index) => {
           return (
             <div key={answer} onClick={() => {
-              if (answer === correctAnswer)
+              if (answer === questionAnswer.correctAnswer)
                 onCorrectAnswerClick()
               else
                 onWrongAnswerClick()
             }}>
-              <h4>{index + 1}. {answer}</h4>
+              <h3>{index + 1}. {answer}</h3>
             </div>
           )
         })
       }
-    </>
+    </div>
   )
 }
 
