@@ -9,7 +9,7 @@ const App = () => {
   const [wrongCount, setWrongCount] = useState(0);
 
   useEffect(() => {
-    setQuestionAnswers(generateQuestionAnswers(2))
+    setQuestionAnswers(generateQuestionAnswers(20))
   }, [])
   return (
     <div style={{textAlign: 'center'}}>
