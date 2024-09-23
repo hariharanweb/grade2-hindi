@@ -5,49 +5,36 @@ import generateQuestionAnswers from "./language/questionsGenerator";
 const App = () => {
   const [questionAnswers, setQuestionAnswers] = useState([]);
   const [currentIndex, setCurrentIndex] = useState(0);
-  const [correctAnswer, setCorrectAnswer] = useState(false);
-  const [wrongAnswer, setWrongAnswer] = useState(false);
   const [correctCount, setCorrectCount] = useState(0);
   const [wrongCount, setWrongCount] = useState(0);
 
   useEffect(() => {
-    setQuestionAnswers(generateQuestionAnswers(5))
+    setQuestionAnswers(generateQuestionAnswers(2))
   }, [])
-
   return (
     <div style={{textAlign: 'center'}}>
       <h1>Welcome to Hindi test</h1>
       <hr />
-      {questionAnswers.length && <QuestionAnswer
+      {questionAnswers.length && currentIndex < questionAnswers.length && <QuestionAnswer
         questionAnswer={questionAnswers[currentIndex]}
         questionIndex={currentIndex+1}
         onCorrectAnswerClick={() => {
-          setCorrectAnswer(true);
-          setWrongAnswer(false);
+          setCorrectCount(correctCount+1);
           if(currentIndex < questionAnswers.length){
-            setCorrectCount(correctCount+1);
-          }
-          if(currentIndex < questionAnswers.length - 1){
             setCurrentIndex(currentIndex+1);
           }
-            
         }}
         onWrongAnswerClick={() => {
-          setCorrectAnswer(false);
-          setWrongAnswer(true);
+          setWrongCount(wrongCount+1);
           if(currentIndex < questionAnswers.length){
-            setWrongCount(wrongCount+1);
-          }
-          if(currentIndex < questionAnswers.length - 1){
             setCurrentIndex(currentIndex+1);
           }
         }}
       />}
-      {correctAnswer && <span style={{ fontSize: '100px' }}>&#128525;</span>}
-      {wrongAnswer && <span style={{ fontSize: '100px' }}>&#129397;</span>}
       <hr />
-      <div><span style={{ fontSize: '24px' }}>Correct Answers: {correctCount}</span></div>
-      <div><span style={{ fontSize: '24px' }}>Wrong Answers: {wrongCount}</span></div>
+      {currentIndex === questionAnswers.length && <h2>Your final score</h2>}
+      <div>Correct Answers: {correctCount} {Array.from(Array(correctCount)).map((_, index)=> <span key={index} style={{ fontSize: '32px' }}>&#128525;</span>)}</div>
+      <div>Wrong Answers: {wrongCount} {Array.from(Array(wrongCount)).map((_, index)=> <span key={index} style={{ fontSize: '32px' }}>&#129397;</span>)}</div>
     </div>
   )
 }

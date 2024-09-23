@@ -15,7 +15,7 @@ const getRandomWords = (arr, n) =>{
 const generateEnglishToHindiQuestions = (numbers) => {
   const randomWords = getRandomWords(hindWords, numbers + 1);
   const questionAnswers = randomWords.map((randomWord) => {
-    const randomWordsForAnswers = getRandomWords(hindWords, numbers);
+    const randomWordsForAnswers = getRandomWords(hindWords, 5);
     const answers = shuffle(randomWordsForAnswers.filter((hindiWord) => {
       return hindiWord.word !== randomWord.word
     }).map((hindiWord) => hindiWord.word).slice(0, 3).concat([randomWord.word]))
@@ -32,7 +32,7 @@ const generateEnglishToHindiQuestions = (numbers) => {
 const generateHindiToEnglishQuestions = (numbers) => {
   const randomWords = getRandomWords(hindWords, numbers + 1);
   const questionAnswers = randomWords.map((randomWord) => {
-    const randomWordsForAnswers = getRandomWords(hindWords, numbers);
+    const randomWordsForAnswers = getRandomWords(hindWords, 5);
     const answers = shuffle(randomWordsForAnswers.filter((hindiWord) => {
       return hindiWord.meanings[0] !== randomWord.meanings[0]
     }).map((hindiWord) => hindiWord.meanings[0]).slice(0, 3).concat([randomWord.meanings[0]]))
