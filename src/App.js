@@ -11,7 +11,7 @@ const App = () => {
   const [wrongCount, setWrongCount] = useState(0);
 
   useEffect(() => {
-    setQuestionAnswers(generateQuestionAnswers(20))
+    setQuestionAnswers(generateQuestionAnswers(5))
   }, [])
 
   return (
@@ -24,16 +24,23 @@ const App = () => {
         onCorrectAnswerClick={() => {
           setCorrectAnswer(true);
           setWrongAnswer(false);
-          setCorrectCount(correctCount+1);
-          if(currentIndex < questionAnswers.length - 1)
+          if(currentIndex < questionAnswers.length){
+            setCorrectCount(correctCount+1);
+          }
+          if(currentIndex < questionAnswers.length - 1){
             setCurrentIndex(currentIndex+1);
+          }
+            
         }}
         onWrongAnswerClick={() => {
           setCorrectAnswer(false);
           setWrongAnswer(true);
-          setWrongCount(wrongCount+1);
-          if(currentIndex < questionAnswers.length - 1)
+          if(currentIndex < questionAnswers.length){
+            setWrongCount(wrongCount+1);
+          }
+          if(currentIndex < questionAnswers.length - 1){
             setCurrentIndex(currentIndex+1);
+          }
         }}
       />}
       {correctAnswer && <span style={{ fontSize: '100px' }}>&#128525;</span>}
