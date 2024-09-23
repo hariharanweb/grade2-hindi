@@ -21,7 +21,7 @@ const generateEnglishToHindiQuestions = (numbers) => {
     }).map((hindiWord) => hindiWord.word).slice(0, 3).concat([randomWord.word]))
 
     return {
-      question: `What is '${randomWord.meanings[0]}' in Hindi?`,
+      question: `What is '${randomWord.meaning}' in Hindi?`,
       answers,
       correctAnswer: randomWord.word
     }
@@ -34,13 +34,13 @@ const generateHindiToEnglishQuestions = (numbers) => {
   const questionAnswers = randomWords.map((randomWord) => {
     const randomWordsForAnswers = getRandomWords(hindWords, 5);
     const answers = shuffle(randomWordsForAnswers.filter((hindiWord) => {
-      return hindiWord.meanings[0] !== randomWord.meanings[0]
-    }).map((hindiWord) => hindiWord.meanings[0]).slice(0, 3).concat([randomWord.meanings[0]]))
+      return hindiWord.meaning !== randomWord.meaning
+    }).map((hindiWord) => hindiWord.meaning).slice(0, 3).concat([randomWord.meaning]))
 
     return {
       question: `What does '${randomWord.word}' mean?`,
       answers,
-      correctAnswer: randomWord.meanings[0]
+      correctAnswer: randomWord.meaning
     }
   })
   return questionAnswers;

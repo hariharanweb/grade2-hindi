@@ -1,194 +1,130 @@
 [
   {
     "word": "पढ़",
-    "meanings": [
-      "read"
-    ]
+    "meaning": "read"
   },
   {
     "word": "मत",
-    "meanings": [
-      "do-not"
-    ]
+    "meaning": "do-not"
   },
   {
     "word": "पानी",
-    "meanings": [
-      "water"
-    ]
+    "meaning": "water"
   },
   {
     "word": "पकड़",
-    "meanings": [
-      "catch"
-    ]
+    "meaning": "catch"
   },
   {
     "word": "कमल",
-    "meanings": [
-      "lotus"
-    ]
+    "meaning": "lotus"
   },
   {
     "word": "बत्तख",
-    "meanings": [
-      "duck"
-    ]
+    "meaning": "duck"
   },
   {
     "word": "शहद",
-    "meanings": [
-      "Honey"
-    ]
+    "meaning": "Honey"
   },
   {
     "word": "सड़क",
-    "meanings": [
-      "Road"
-    ]
+    "meaning": "Road"
   },
   {
     "word": "उपवन",
-    "meanings": [
-      "Garden"
-    ]
+    "meaning": "Garden"
   },
   {
     "word": "थरमस",
-    "meanings": [
-      "flask"
-    ]
+    "meaning": "flask"
   },
   {
     "word": "अदरक",
-    "meanings": [
-      "Ginger"
-    ]
+    "meaning": "Ginger"
   },
   {
     "word": "अचकन",
-    "meanings": [
-      "Coat"
-    ]
+    "meaning": "Coat"
   },
   {
     "word": "बाज़ार",
-    "meanings": [
-      "market"
-    ]
+    "meaning": "market"
   },
   {
     "word": "छाता",
-    "meanings": [
-      "umbrella"
-    ]
+    "meaning": "umbrella"
   },
   {
     "word": "ताला",
-    "meanings": [
-      "lock"
-    ]
+    "meaning": "lock"
   },
   {
     "word": "अनार",
-    "meanings": [
-      "pomogranage"
-    ]
+    "meaning": "pomogranage"
   },
   {
     "word": "गाजर",
-    "meanings": [
-      "carrot"
-    ]
+    "meaning": "carrot"
   },
   {
     "word": "जानवर",
-    "meanings": [
-      "animal"
-    ]
+    "meaning": "animal"
   },
   {
     "word": "टमाटर",
-    "meanings": [
-      "tomato"
-    ]
+    "meaning": "tomato"
   },
   {
     "word": "अख़बार",
-    "meanings": [
-      "newspaper"
-    ]
+    "meaning": "newspaper"
   },
   {
     "word": "आम",
-    "meanings": [
-      "mango"
-    ]
+    "meaning": "mango"
   },
   {
     "word": "लाल",
-    "meanings": [
-      "red"
-    ]
+    "meaning": "red"
   },
   {
     "word": "हरा",
-    "meanings": [
-      "green"
-    ]
+    "meaning": "green"
   },
   {
     "word": "काला",
-    "meanings": [
-      "black"
-    ]
+    "meaning": "black"
   },
   {
     "word": "दिन",
-    "meanings": [
-      "day"
-    ]
+    "meaning": "day"
   },
   {
     "word": "दिल",
-    "meanings": [
-      "heart"
-    ]
+    "meaning": "heart"
   },
   {
     "word": "लिख",
-    "meanings": [
-      "write"
-    ]
+    "meaning": "write"
   },
   {
     "word": "किला",
-    "meanings": [
-      "fort"
-    ]
+    "meaning": "fort"
   },
   {
     "word": "किताब",
-    "meanings": [
-      "book"
-    ]
+    "meaning": "book"
   },
   {
     "word": "हिरन",
-    "meanings": [
-      "deer"
-    ]
+    "meaning": "deer"
   },
   {
     "word": "इधर",
-    "meanings": [
-      "here"
-    ]
+    "meaning": "here"
   },
   {
-    "word": "मीठा",
-    "meanings": [
-      "sweet"
-    ]
+    "word": "मीठाइ",
+    "meaning": "sweet"
   }
 ]
