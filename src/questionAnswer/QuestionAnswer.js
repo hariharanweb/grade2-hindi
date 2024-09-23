@@ -6,7 +6,8 @@ const QuestionAnswer = ({ questionAnswer, questionIndex, onCorrectAnswerClick, o
       {
         questionAnswer.answers.map((answer, index) => {
           return (
-            <div key={answer} onClick={() => {
+            <div key={answer} style={{backgroundColor: 'lightgrey', paddingBottom: '1px', paddingTop: '1px', marginBottom: '8px'}} 
+              onClick={() => {
               if (answer === questionAnswer.correctAnswer)
                 onCorrectAnswerClick()
               else

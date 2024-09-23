@@ -31,10 +31,13 @@ const App = () => {
           }
         }}
       />}
-      <hr />
+      
       {currentIndex === questionAnswers.length && <h2>Your final score</h2>}
+      <div style={{paddingTop: '8px'}}>
+      <hr />
       <div>Correct Answers: {correctCount} {Array.from(Array(correctCount)).map((_, index)=> <span key={index} style={{ fontSize: '32px' }}>&#128525;</span>)}</div>
       <div>Wrong Answers: {wrongCount} {Array.from(Array(wrongCount)).map((_, index)=> <span key={index} style={{ fontSize: '32px' }}>&#129397;</span>)}</div>
+      </div>
     </div>
   )
 }
